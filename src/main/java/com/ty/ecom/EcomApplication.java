@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @OpenAPIDefinition(info = @Info(title = "Ecom App", version = "1.0", description = "Ecommerce web application"))
-@SecurityScheme(name = "ecom-api", type = SecuritySchemeType.HTTP)
+@SecurityScheme(name = "ecom-api", type = SecuritySchemeType.HTTP, scheme = "Bearer", bearerFormat = "JWT")
 @SpringBootApplication
 public class EcomApplication {
 
